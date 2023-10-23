@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b04oqhmh5dr7f"]
+
+[ext_resource type="Texture2D" uid="uid://dpkbe58uvbtuf" path="res://RockyRoads/Objects/treasure_chest.png" id="1_u11mm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fkc51"]
+size = Vector2(28, 16)
+
+[node name="Chest" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_u11mm")
+hframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 8)
+shape = SubResource("RectangleShape2D_fkc51")

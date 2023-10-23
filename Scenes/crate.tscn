@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddhsouvlu1yme"]
+
+[ext_resource type="Texture2D" uid="uid://bqj84hf5opg0g" path="res://RockyRoads/Objects/crate.png" id="1_nolnx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fkc51"]
+size = Vector2(17, 15)
+
+[node name="Crate" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_nolnx")
+hframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 1.5)
+shape = SubResource("RectangleShape2D_fkc51")
